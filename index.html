@@ -1,0 +1,255 @@
+<!-- This website is produced as a part of the WebElevate programme by Digital Skills Academy. The project is part of the Front End Web Development Module. I was aked to produce the company mark, establish the visual language and explore typography. Producing a Twitter Bootsrap website for CarShare startup company was only one aspect of the project. -->
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <title>CarShare</title>
+      <meta charset="utf-8">
+      <link rel="icon" type="image/png" href="img/favicon.png"> <!-- logo favicon link -->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="css/main.css">
+      <!-- Older Browser Support Shims -->
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE9]>
+            <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+            <![endif]-->
+  </head>
+  <!-- NAV BAR primary sourse http://startbootstrap.com/template-overviews/scrolling-nav/-->
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">    <!-- navbar-header page-scroll -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- CARSHARE LOGO PART -->
+                <a class="navbar-brand page-scroll" href="#page-top">
+                  <img src="img/CS_Logo_Icon_blue.png">   <!-- home page favicon anchor -->
+                </a>
+            </div> <!-- /.navbar-header page-scroll -->
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#search">Search</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#app">App</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#signup">Sign Up</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav social">
+                   <li>
+                        <a href="https://www.facebook.com/CarshareEurope/?notif_t=page_admin&notif_id=1462204408796120" target="_blank">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/CarshareEurope" target="_blank">Twitter</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+          </div> <!-- /.column12 -->
+        </div> <!-- /.row -->
+      </div>  <!-- /.container -->
+    </nav> <!-- /.nav -->
+
+    <header>
+ <!-- OVERLAY MATERIAL -->
+        <section id="services">
+          <img class="section-heading" src="img/CS_logo_white.png" class="img-responsive" alt="Logo over video">
+        </section>
+<!-- The main aim was to bring the trip search bar over the video, however all efforts were partially successfull and I opted for a separete search section  -->
+ <!-- OVERLAY MATERIAL END -->
+ <!-- VIDEO SECTION -->
+      <div class="video-container">
+        <video autoplay muted loop id="myVideo">
+            <source src="video/CarShare Video Comp 4.mp4" type="video/mp4" type="video/mp4">
+            <source src="video/CarShare Video Comp 4.webm" type="video/webm" type="video/webm">
+            <source src="video/CarShare Video Comp 4.ogv" type="video/ogv" type="video/ogv">
+        </video>
+      </div>
+ <!-- VIDEO SECTION END-->
+    </header>
+<!-- SEARCH SECTION -->
+      <!-- SEARCH SECTION -->
+      <section id="search" class="search-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-offset-4 col-md-4">
+              <hr>
+              <h1 id="special">Search</h1>
+              <hr>
+            </div>
+          </div>
+        </div>
+        <!-- Search Bar -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <form class="form-inline">
+                <div class="form-group">
+                    <label class="sr-only" for="exampleInputFrom">From:</label>
+                    <input type="text" class="form-control" id="exampleInputFrom" placeholder="From">
+                </div>
+                <div class="form-group">
+                   <label class="sr-only" for="exampleInputTo">To:</label>
+                    <input type="text" class="form-control" id="exampleInputTo" placeholder="To">
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="exampleCalendar">Calendar</label>
+                    <input type="calendar" class="form-control" id="exampleInputCalendar" placeholder="DD/MM/YY">
+                </div>
+                <!-- Ride/Drive Choise option -->
+                <div class="form-group">
+                  <select class="form-control">
+                    <option>Ride/Drive</option>
+                    <option>Ride</option>
+                    <option>Drive</option>
+                  </select>
+                </div>
+
+                <button type="submit" class="btn-2 btn">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+ <!-- SEARCH SECTION END -->
+<!-- APP SECTION -->
+    <div class="container-background-app">
+      <section id="app" class="app-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <hr>
+                <h1 id="special">Download<br> the App</h1>
+                <hr>
+                <div class="download-img">
+                <a href="https://itunes.apple.com/ie/app/apple-store/id375380948?mt=8" target="_blank"><img src="img/DOWNLOAD_APPLE.png"></a>
+                <a href="https://play.google.com/store/apps?hl=en" target="_blank"><img src="img/DOWNLOAD_GOOGLE.png"></a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img class="appimg"src="img/DOWNLOAD.jpg">
+              </div>
+            </div>
+          </div>
+        </section> <!-- /.app-section -->
+      </div>
+<!-- ABOUT SECTION -->
+      <div class="container-background-about">
+        <section id="about" class="about-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-offset-4 col-md-4">
+                <hr>
+                <h1 id="special">About</h1>
+                <hr>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+              <div class="row">
+              <div class="col-md-offset-1 col-md-10">
+                <p>
+                  Carshare is a European carpooling digital startup (website & app) that caters for drivers and passengers from the learner to the aficionado. Drivers and passengers Offer A Ride / Find A Ride via the website and / or app. Following a successful match the designated parties contact each other re: travel arrangements (i.e. cost, meeting place, etc). Then they meet up and take off together as planned. 
+                </p>
+                <br>
+                <p>
+                  In addition, Carshare is a national online sustainable transport information hub. Carshare capitalizes on the ecological and societal benefits of carsharing. Thus, low-cost, communal and environmentally friendly travel is only a few clicks away.
+
+                  Carshare encourages its users to consider and practice novel approaches to car dependency. Carshare ultimately hopes to ease the economical, ecological and societal costs of modern motoring. This start-up verges towards creating an optimal digital and real-world experience for its users.
+
+                  Carshare is essentially organized, pre-arranged informal carsharing between strangers / members who enjoy independence, exiting experiences and flexibility. Notwithstanding, Carshare enables strangers / members to set up impromptu ad hoc rides, via the website and app. 
+                </p>
+              </div>
+              </div>
+              </div>
+            </div>
+          </section>
+       </div>
+<!-- ABOUT SECTION END  -->
+ <!-- SIGN UP SECTION -->
+    <section id="signup" class="signup-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-offset-4 col-md-4">
+              <hr>
+              <h1 id="special">Sign Up</h1>
+              <hr>
+            </div>
+          </div>
+        </div>
+        <!-- SING UP -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <form class="form-inline">
+                <div class="form-group">
+                    <label class="sr-only" for="exampleInputFirstName">First Name</label>
+                    <input type="text" class="form-control" id="exampleInputFirstName" placeholder="First Name">
+                </div>
+                <div class="form-group">
+                   <label class="sr-only" for="exampleInputSecondName">Second Name</label>
+                    <input type="text" class="form-control" id="exampleInputSecondName" placeholder="Second Name">
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+                </div>
+                <button type="submit" class="btn-1 btn">Sign Up</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+<!-- SIGN  UP END -->
+<!-- FOOTER -->
+    <section id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>
+              <a href="#">CARSHARE</a> |
+              <a href="#">CONTACT</a> |
+              <a href="#">CHOOSE A COUNTRY</a> |
+              <a href="#">FAQ</a>
+            </p>
+            <p>@Carshare 2016.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+<!-- END FOOTER -- >
+<!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
+  </body>
+</html>
